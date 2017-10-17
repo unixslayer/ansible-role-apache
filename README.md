@@ -1,6 +1,8 @@
 # Ansible Role: Apache 2.x
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-apache.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-apache)
+This if a fork of [geerlingguy.apache](https://github.com/geerlingguy/ansible-role-apache)
+
+[![Build Status](https://travis-ci.org/unixslayer/ansible-role-apache.svg?branch=master)](https://travis-ci.org/unixslayer/ansible-role-apache)
 
 An Ansible Role that installs Apache 2.x on RHEL/CentOS, Debian/Ubuntu, SLES and Solaris.
 
@@ -85,8 +87,8 @@ The SSL protocols and cipher suites that are used/allowed when clients make secu
 The default values for the `AllowOverride` and `Options` directives for the `documentroot` directory of each vhost.  A vhost can overwrite these values by specifying `allow_override` or `options`.
 
     apache_mods_enabled:
-      - rewrite.load
-      - ssl.load
+      - rewrite
+      - ssl
     apache_mods_disabled: []
 
 (Debian/Ubuntu ONLY) Which Apache mods to enable or disable (these will be symlinked into the appropriate location). See the `mods-available` directory inside the apache configuration directory (`/etc/apache2/mods-available` by default) for all the available mods.
@@ -154,3 +156,5 @@ MIT / BSD
 ## Author Information
 
 This role was created in 2014 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).
+
+Some modifications were made in 2017 by [Piotr kicek_ Zając](http://unixslayer.pl)

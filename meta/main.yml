@@ -2,7 +2,7 @@
 dependencies: []
 
 galaxy_info:
-  author: geerlingguy
+  author: unixslayer
   description: Apache 2.x for Linux.
   company: "Midwestern Mac, LLC"
   license: "license (BSD, MIT)"
@@ -35,5 +35,6 @@ galaxy_info:
     - apache
     - webserver
     - html
+    - geerlingguy
 
 allow_duplicates: yes
